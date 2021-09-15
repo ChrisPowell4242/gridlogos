@@ -1,0 +1,56 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "adidas apple amazon beats"
+    "headphones shop music shoes";
+}
+
+.adidas{ 
+    grid-area: adidas;
+}
+
+.apple{
+    grid-area: apple;
+}
+
+.amazon{
+    grid-area: amazon;
+}
+
+.beats{
+    grid-area: beats;
+}
+
+.headphones{ 
+    grid-area: headphones;
+}
+
+.shop{
+    grid-area: shop;
+}
+
+.music{
+    grid-area: music;
+}
+
+.shoes{
+    grid-area: shoes;
+}
+
+.grid-container > div {
+    max-height: 50vh;
+    /* just-self: center;
+    align-self: center; */
+    /* place-self does justify-self + align-self in one */
+    place-self: center;
+    border: 1px solid rgb(88, 49, 49);
+    padding: 3em;
+
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
